@@ -8,5 +8,11 @@ public class Main {
         list.printHead();
         list.printTail();
         list.printLength();
+
+        list.append(5);
+        list.printList();
+        list.printHead();
+        list.printTail();
+        list.printLength();
     }
 }
