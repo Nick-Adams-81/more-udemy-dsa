@@ -22,5 +22,12 @@ public class Main {
         list.printHead();
         list.printTail();
         list.printLength();
+
+        list.prepend(2);
+        list.prepend(1);
+        list.printList();
+        list.printHead();
+        list.printTail();
+        list.printLength();
     }
 }
