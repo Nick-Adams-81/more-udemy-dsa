@@ -1,6 +1,12 @@
+import LinkedList.LinkedList;
+
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hallo");
+        LinkedList list = new LinkedList(4);
+        list.printList();
+        list.printHead();
+        list.printTail();
+        list.printLength();
     }
 }
