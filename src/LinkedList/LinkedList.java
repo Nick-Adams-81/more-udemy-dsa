@@ -83,6 +83,17 @@ public class LinkedList {
         length--;
         if(length == 0) tail = null;
         return temp;
+    }
+
+    public Node get(int index) {
+        Node temp = head;
+        for(int i = 0; i < index; i++) {
+            temp = temp.next;
+        }
+        return temp;
+    }
+
+    public void set(int index, int value) {
 
     }
 

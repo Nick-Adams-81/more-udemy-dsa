@@ -15,6 +15,16 @@ public class Main {
         System.out.println("\n");
         newList.printList();
         newList.printHead();
+        newList.printTail();
+        newList.printLength();
+
+        newList.removeLast();
+        newList.printList();
+        newList.printHead();
+        newList.printTail();
+        newList.printLength();
+
+        System.out.println(newList.get(0).value);
 
 
     }
