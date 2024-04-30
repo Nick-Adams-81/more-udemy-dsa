@@ -63,5 +63,8 @@ public class Main {
         myList.printTail();
         myList.printLength();
 
+        myList.reverse();
+        myList.printList();
+
     }
 }
