@@ -57,5 +57,11 @@ public class Main {
         myList.printTail();
         myList.printLength();
 
+        myList.remove(2);
+        myList.printList();
+        myList.printHead();
+        myList.printTail();
+        myList.printLength();
+
     }
 }
