@@ -3,31 +3,19 @@ import LinkedList.LinkedList;
 public class Main {
 
     public static void main(String[] args) {
-        LinkedList list = new LinkedList(4);
-        list.printList();
-        list.printHead();
-        list.printTail();
-        list.printLength();
 
-        list.append(5);
-        list.append(6);
-        list.append(7);
-        list.printList();
-        list.printHead();
-        list.printTail();
-        list.printLength();
+        LinkedList newList = new LinkedList(1);
+        newList.printList();
+        newList.append(2);
+        newList.append(3);
+        System.out.println("\n");
+        newList.printList();
 
-        list.removeLast();
-        list.printList();
-        list.printHead();
-        list.printTail();
-        list.printLength();
+        newList.removeFirst();
+        System.out.println("\n");
+        newList.printList();
+        newList.printHead();
 
-        list.prepend(2);
-        list.prepend(1);
-        list.printList();
-        list.printHead();
-        list.printTail();
-        list.printLength();
+
     }
 }

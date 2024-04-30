@@ -22,7 +22,7 @@ public class LinkedList {
     }
 
     public void printLength() {
-        System.out.println(length);
+        System.out.println("Length: " + length);
     }
 
     public void printList() {
@@ -73,6 +73,17 @@ public class LinkedList {
             head = newNode;
         }
         length++;
+    }
+
+    public Node removeFirst() {
+        if(length == 0) return null;
+        Node temp = head;
+        head = head.next;
+        temp.next = null;
+        length--;
+        if(length == 0) tail = null;
+        return temp;
+
     }
 
 
