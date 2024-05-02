@@ -81,5 +81,11 @@ public class Main {
         dll.printHead();
         dll.printTail();
 
+        dll.removeLast();
+        dll.printList();
+        dll.printLength();
+        dll.printHead();
+        dll.printTail();
+
     }
 }
