@@ -147,4 +147,33 @@ public class LinkedList {
             temp = after;
         }
     }
+
+    // linked list interview exercises
+
+//    find middle node method should return the middle node of a linked list,
+//    if the list has an even number of nodes, return the second middle node
+    public Node findMiddleNode() {
+        Node fast = head;
+        Node slow = head;
+        while(fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
+    }
+
+    // the has loop method should return true if there is a cycle or loop in the list.
+    public boolean hasLoop() {
+        Node slow = head;
+        Node fast = head;
+        while(fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if(slow == fast) return true;
+        }
+        return false;
+    }
+
+
+
 }
