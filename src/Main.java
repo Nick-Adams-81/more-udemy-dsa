@@ -94,5 +94,11 @@ public class Main {
         dll.printHead();
         dll.printTail();
 
+        dll.removeFirst();
+        dll.printList();
+        dll.printLength();
+        dll.printHead();
+        dll.printTail();
+
     }
 }
