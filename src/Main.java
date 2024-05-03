@@ -110,5 +110,11 @@ public class Main {
         dll.printHead();
         dll.printTail();
 
+        dll.insert(4, 234);
+        dll.printList();
+        dll.printLength();
+        dll.printHead();
+        dll.printTail();
+
     }
 }
