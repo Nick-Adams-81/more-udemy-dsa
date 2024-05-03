@@ -89,12 +89,22 @@ public class Main {
 
         dll.prepend(0);
         dll.append(2);
+        dll.append(3);
+        dll.append(4);
         dll.printList();
         dll.printLength();
         dll.printHead();
         dll.printTail();
 
         dll.removeFirst();
+        dll.printList();
+        dll.printLength();
+        dll.printHead();
+        dll.printTail();
+
+        System.out.println(dll.get(0).value);
+
+        dll.set(2, 300);
         dll.printList();
         dll.printLength();
         dll.printHead();
