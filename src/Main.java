@@ -1,5 +1,6 @@
 import DoublyLinkedList.DLL;
 import LinkedList.LinkedList;
+import Stack.Stack;
 
 public class Main {
 
@@ -122,6 +123,11 @@ public class Main {
         dll.printLength();
         dll.printHead();
         dll.printTail();
+
+        Stack stack = new Stack(1);
+        stack.printStack();
+        stack.printTop();
+        stack.printHeight();
 
     }
 }
