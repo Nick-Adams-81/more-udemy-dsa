@@ -48,15 +48,14 @@ public class Queue {
     public Node dequeue() {
         Node temp = first;
         if(length == 0) return null;
-        else {
+        if(length == 1) {
+            first = null;
+            last = null;
+        } else {
             first = first.next;
             temp.next = null;
         }
         length--;
-        if(length == 0) {
-            first = null;
-            last = null;
-        }
         return temp;
     }
 }
