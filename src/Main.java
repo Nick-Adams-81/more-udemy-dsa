@@ -1,4 +1,5 @@
 import DoublyLinkedList.DLL;
+import HashTable.HashTable;
 import LinkedList.LinkedList;
 import Queue.Queue;
 import Stack.Stack;
@@ -173,6 +174,9 @@ public class Main {
         System.out.println(bst.root.left.right.value);
 
         System.out.println(bst.contains(1));
+
+        HashTable table = new HashTable();
+        table.printTable();
 
     }
 }
