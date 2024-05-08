@@ -172,5 +172,7 @@ public class Main {
         bst.insert(82);
         System.out.println(bst.root.left.right.value);
 
+        System.out.println(bst.contains(1));
+
     }
 }

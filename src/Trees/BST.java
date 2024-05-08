@@ -28,4 +28,19 @@ public class BST {
             }
         }
     }
+
+    public boolean contains(int value) {
+        Node temp = root;
+        if(root == null) return false;
+        while(temp != null) {
+            if(temp.value > value) {
+                temp = temp.left;
+            } else if(temp.value < value) {
+                temp = temp.right;
+            } else {
+                return true;
+            }
+        }
+        return false;
+    }
 }
