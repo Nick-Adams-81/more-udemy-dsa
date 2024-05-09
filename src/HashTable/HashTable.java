@@ -1,5 +1,7 @@
 package HashTable;
 
+import java.util.Objects;
+
 public class HashTable {
     private int size = 7;
     private Node[] dataMap;
@@ -41,6 +43,18 @@ public class HashTable {
             temp.next = newNode;
         }
     }
+
+    public int get(String key) {
+        int index = hash(key);
+        Node temp = dataMap[index];
+        while(temp != null) {
+            if(Objects.equals(temp.key, key)) return temp.value;
+            temp = temp.next;
+        }
+        return 0;
+    }
+
+
 
 
 }
