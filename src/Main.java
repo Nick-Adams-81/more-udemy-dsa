@@ -188,5 +188,7 @@ public class Main {
 
         System.out.println(table.get("Screws"));
 
+        System.out.println(table.keys());
+
     }
 }
