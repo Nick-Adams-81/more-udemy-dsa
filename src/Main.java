@@ -178,5 +178,13 @@ public class Main {
         HashTable table = new HashTable();
         table.printTable();
 
+        table.set("Nails", 10);
+        table.set("Hammer", 45);
+        table.set("Screws", 14);
+        table.set("Screw Driver", 80);
+        table.set("Bolts", 34);
+
+        table.printTable();
+
     }
 }
