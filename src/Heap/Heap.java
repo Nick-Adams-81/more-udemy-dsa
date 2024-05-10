@@ -14,7 +14,7 @@ public class Heap {
     public List<Integer> getHeap() {
         return new ArrayList<>(heap);
     }
-    private int letChild(int index) {
+    private int leftChild(int index) {
         return 2 * index + 1;
     }
 
@@ -37,6 +37,37 @@ public class Heap {
         while(current > 0 && heap.get(current) > heap.get(parent(current))) {
             swap(current, parent(current));
             current = parent(current);
+        }
+    }
+
+    public Integer remove() {
+        if(heap.size() == 0) return null;
+        if(heap.size() == 1) return heap.remove(0);
+
+        int maxValue = heap.get(0);
+        heap.set(0, heap.remove(heap.size() -1));
+        sinkDown(0);
+        return maxValue;
+    }
+
+    private void sinkDown(int index) {
+        int maxIndex = index;
+        while(true) {
+            int left = leftChild(index);
+            int right = rightChild(index);
+            if(left < heap.size() && heap.get(left) > heap.get(maxIndex)) {
+                maxIndex = left;
+            }
+            if(right < heap.size() && heap.get(right) > heap.get(maxIndex)) {
+                maxIndex = right;
+            }
+            if(maxIndex != index) {
+                swap(index, maxIndex);
+                index = maxIndex;
+            } else {
+                return;
+            }
+
         }
     }
 }
