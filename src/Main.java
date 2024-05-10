@@ -205,5 +205,8 @@ public class Main {
         graph.removeEdge("B", "C");
         graph.printGraph();
 
+        graph.removeVertex("C");
+        graph.printGraph();
+
     }
 }
