@@ -1,6 +1,7 @@
 import DoublyLinkedList.DLL;
 import Graph.Graph;
 import HashTable.HashTable;
+import Heap.Heap;
 import LinkedList.LinkedList;
 import Queue.Queue;
 import Stack.Stack;
@@ -207,6 +208,15 @@ public class Main {
 
         graph.removeVertex("C");
         graph.printGraph();
+
+        Heap heap = new Heap();
+        heap.insert(100);
+        heap.insert(99);
+        heap.insert(75);
+        heap.insert(61);
+        System.out.println(heap.getHeap());
+
+
 
     }
 }
