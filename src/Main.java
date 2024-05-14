@@ -181,6 +181,7 @@ public class Main {
         System.out.println(bst.root.left.right.value);
 
         System.out.println(bst.contains(1));
+        System.out.println("recursive contains: " + bst.rContains(47));
 
         HashTable table = new HashTable();
         table.printTable();
