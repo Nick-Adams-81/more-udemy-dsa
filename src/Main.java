@@ -9,6 +9,11 @@ import Trees.BST;
 
 public class Main {
 
+    public static int factorial(int n) {
+        if(n == 1) return 1;
+        return n * factorial(n -1);
+    }
+
     public static void main(String[] args) {
 
 //        LinkedList newList = new LinkedList(1);
@@ -218,6 +223,8 @@ public class Main {
 
         heap.remove();
         System.out.println(heap.getHeap());
+
+        System.out.println(factorial(4));
 
 
 
